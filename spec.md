@@ -49,3 +49,13 @@ The conventions that keep the system lean: how files and code are organized, whe
 ### Decisions and changes
 
 Consequential structural decisions, the alternatives considered, and why you chose as you did, including later changes to the structure.
+
+| Date | Decision | Why |
+|---|---|---|
+| 2026-10-26 | URP, Windows, 60 FPS target (provisional with the Unity choice) | Project baseline |
+| 2026-10-26 | Hybrid folders (Core + Features) with assembly definitions | Navigable at scale; faster compiles |
+| 2026-10-26 | Mechanics ship functional first; juice added later through events | Test feel bare; avoid rework; reusable juice tools |
+| 2026-10-26 | Particle/trail settings via runtime config scripts | Hide inspector bloat; expose only what matters |
+| 2026-10-26 | Test captures are temporary, outside `Assets/`, deleted after review | No image bloat in project or repo |
+| 2026-10-26 | Milestone snapshots (3–5 images) kept in `Docs/Milestones/` | Lightweight visual history for documentation |
+| 2026-10-26 | No Git LFS | GitHub Download ZIP (weekly snapshot) leaves LFS files as pointers |

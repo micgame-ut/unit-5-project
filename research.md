@@ -18,6 +18,13 @@ When you begin this step, start a fresh chat so its transcript stays clean. For 
 
 Record what informs your build decisions: the questions you investigated, useful sources and what they support, experiments and their results, and the decisions you made with your reasons. Distinguish evidence from assumptions; an Agent's recommendation alone is not evidence.
 
+| Date | Decision | Why |
+|---|---|---|
+| 2026-10-26 | Rifter is the leading idea (chosen over Wizarding Runes: Benders). Provisional until the pitch is approved. | 2D, design already documented, scope cuts cleanly by dimension |
+| 2026-10-26 | Rifter v1 scope = Prison + Water World. Other dimensions are stretch. | One complete chapter is achievable in the time available |
+| 2026-10-26 | Universal 2D (URP) template | Rifter is a 2D puzzle-platformer |
+| 2026-10-26 | Benders arm-IK test is an optional side prototype only | Proves the dropped IK idea without risking the deadline |
+
 ## Scope
 
 ### Stretch goals
