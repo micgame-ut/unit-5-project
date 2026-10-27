@@ -71,7 +71,7 @@ Write code for these exact versions. If unsure whether an API exists in this ver
 - `reference-phase`: before any new mechanic, shader, or VFX, collect references and get the Developer's pick.
 - `shader-graph`: Shader Graph groups, performance rules, shader doc.
 - `vfx-config`: runtime config scripts for particles and trails.
-- `captures`: temporary test captures and kept milestone snapshots.
+- `screenshots-video`: temporary test captures and kept milestone snapshots.
 
 ## Module lifecycle
 Every feature is a module and follows this order:
@@ -83,7 +83,7 @@ Every feature is a module and follows this order:
 | 2 | Field spec | Table of fields/properties and their purpose |
 | 3 | Dependencies & events | What it references, raises, and listens to |
 | 4 | Methods | One method at a time, each with a concise explanation. Trivial methods (getters, simple callbacks, one-line wrappers) are batched into one approval |
-| 5 | Tests | Agent checks compile/console first, reviews a capture of the sandbox scene if visual (`captures` skill), then the Developer confirms behavior against `spec.md` acceptance checks |
+| 5 | Tests | Agent checks compile/console first, reviews a capture of the sandbox scene if visual (`screenshots-video` skill), then the Developer confirms behavior against `spec.md` acceptance checks |
 | 6 | Optimization pass | Profiler check against budgets |
 | 7 | Doc | `Docs/<Feature>.md` |
 | 8 | Roadmap | Update `ROADMAP.md`: status, juice backlog, mechanic log |
