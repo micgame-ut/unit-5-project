@@ -1,7 +1,7 @@
 # STATUS.md
 
 **Project:** Project 5, solo. Leading idea: Rifter (2D puzzle-platformer, Unity). Not yet pitched or approved.
-**Branch:** `docs/import-session-files`
+**Branch:** `main`
 **Phase:** 1 — Ideate and pitch (Oct 26–Nov 2)
 **Lifecycle step:** Pre-development setup
 **Design doc:** Notion → My Motivation Hub / Game Development / Game Ideas / Rifter
@@ -18,10 +18,9 @@
 The mapping is a draft. Final phase goals go in `plan.md` after the pitch is approved.
 
 ## Next action
-1. Developer decides whether Rifter goes forward or other ideas get explored first (`pitch.md` → Ideation).
-2. Review the imported docs on `docs/import-session-files`, then merge to `main`.
-3. Write the pitch; Studio director review at the start of the Nov 2 meeting.
-4. After approval: create the Unity project (Universal 2D URP template), fill the version table in `AGENTS.md`, set Force Text and Visible Meta Files, then start Phase 2.
+1. Fresh chat: ideation first (decided 2026-10-27). Explore several ideas besides Rifter in `pitch.md` → Ideas, then choose. Suggested prompt: `Read the project documents and help me explore ideas for my project.`
+2. Write the pitch; Studio director review at the start of the Nov 2 meeting.
+3. After approval: create the Unity project (Universal 2D URP template), fill the version table in `AGENTS.md`, set Force Text and Visible Meta Files, then start Phase 2.
 
 ## Open questions
 - Is Unity (and Rifter) the final choice? Depends on the pitch.
