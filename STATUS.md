@@ -1,7 +1,7 @@
 # STATUS.md
 
 **Project:** Project 5, solo. Leading idea: Rifter (2D puzzle-platformer, Unity). Not yet pitched or approved.
-**Branch:** `docs/session-transcript` (then `main`; pitch work happens in a fresh chat)
+**Branch:** `main`
 **Phase:** 1 — Ideate and pitch (Oct 26–Nov 2)
 **Lifecycle step:** Pre-development setup
 **Design doc:** Notion → My Motivation Hub / Game Development / Game Ideas / Rifter
