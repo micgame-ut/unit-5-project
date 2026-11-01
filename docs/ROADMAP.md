@@ -1,10 +1,10 @@
-# ROADMAP.md — Rifter (provisional, pending pitch approval)
+# ROADMAP.md — Plane Shift (working title; provisional, pending pitch approval)
 
 **Status key:** ⬜ Not started · 🟨 Functional · 🟩 Juiced · ➖ Not needed for this game (add on demand only)
 
 Mechanics ship as **Functional** first: complete, tested, optimized, documented, and raising events at every moment juice could attach to. Juice is added later as its own pass, without touching the mechanic's logic. Each row's **Juice backlog** lists ideas noted during the functional build.
 
-Scope and schedule live in `plan.md`; this file tracks which systems exist.
+Scope and schedule live in `docs/plan.md`; this file tracks which systems exist.
 
 ---
 
@@ -41,12 +41,12 @@ Scope and schedule live in `plan.md`; this file tracks which systems exist.
 |---|---|---|
 | Player controller | ⬜ | |
 | Camera system | ⬜ | |
-| Health / damage | ➖ | Breath Bubble covers the "pops on hit" rule |
+| Health / damage | ➖ | One hit, instant respawn at the room checkpoint (handled by Checkpoints / respawn) |
 | Combat | ➖ | |
 | Interaction (doors, pickups, NPCs) | ⬜ | |
 | Score / currency | ➖ | |
 | Inventory | ➖ | |
-| Dialogue | ➖ | Unless the snail-people tunes need it |
+| Dialogue | ➖ | No narrative yet |
 | Quests / objectives | ➖ | |
 | Progression (XP, unlocks, upgrades) | ➖ | |
 
@@ -54,10 +54,10 @@ Scope and schedule live in `plan.md`; this file tracks which systems exist.
 
 | System | Status | Juice backlog |
 |---|---|---|
-| Enemy AI | ➖ | |
+| Enemy AI (patroller, chaser, shooter; each stays in its own plane) | ⬜ | |
 | Spawning | ➖ | |
 | Checkpoints / respawn | ⬜ | |
-| Level / world transitions | ⬜ | |
+| Level / room chaining and exit doors | ⬜ | |
 | Cutscenes / scripted sequences | ➖ | |
 
 ## 5. Feel & Feedback (`Features/Juice/` + shared tools in `Core/`)
@@ -72,28 +72,34 @@ Reusable juice tools. Built once, then plugged into mechanics through their even
 | UI animation / transitions | ⬜ | |
 | Feedback player (one component that triggers shake + VFX + SFX together) | ⬜ | |
 
-## 5b. Rifter-Specific Systems (`Features/`)
-Provisional until the pitch is approved. "Phase" is a draft mapping to the brief's phases (see `STATUS.md`).
+## 5b. Plane Shift-Specific Systems (`Features/`)
+Provisional until the pitch is approved. "Phase" is a draft mapping to the brief's phases (see `STATUS.md` and `pitches/plane-shift/pitch.md` → Five-week map). Rules come from the Notion doc "Plane Shift (working title)".
 
 | System | Status | Phase | Juice backlog |
 |---|---|---|---|
-| Toska controller (autonomous movement + player nudge) | ⬜ | 2 | |
-| Rift (place, flip forward/backward, active/inactive) | ⬜ | 2 | |
-| Dimensional travel (layers, open-space check) | ⬜ | 2 | |
-| Rift gravity pull (Toska + small objects) | ⬜ | 3 | |
-| Breath Bubble (underwater breathing, shrinks with depth, pops on hit) | ⬜ | 3 | |
-| Dimension: Maximum Security Prison | ⬜ | 3 | |
-| Dimension: Water World | ⬜ | 3 | |
-| Water / flooding (flood-the-cell puzzle) | ⬜ | 4 | |
-| Dimension: Planet Brain (stretch) | ⬜ | — | |
-| Dimension: Forest Floor (stretch) | ⬜ | — | |
+| Player controller (A/D move, jump, per-plane gravity and friction) | ⬜ | 2 | |
+| Plane stack (3 planes sharing x/y; only the current plane is solid) | ⬜ | 2 | |
+| Plane shift (W/S, keep momentum, one shift per airtime) | ⬜ | 2 | |
+| Blocked shift (camera moves, shakes, returns; player stays) | ⬜ | 2 | |
+| Parallax + landing ghosts | ⬜ | 2 | |
+| Plane rules: Low gravity (background), Normal (midground), Heavy (foreground) | ⬜ | 2–3 | |
+| Momentum on entry (vertical speed adapts to the new plane's gravity) | ⬜ | 3 | |
+| Player silhouette through foreground solids | ⬜ | 3 | |
+| Prison midground rooms + exit doors (teaching steps 1–4) | ⬜ | 3 | |
+| Carried objects (grab, drop, shift together, blocked shift) | ⬜ | 4 | |
+| Hazards by plane (mines/updrafts, prison hazards, crumbling floors) | ⬜ | 4 | |
+| Rooms 5–7 (carrying, drop/throw, combinations) | ⬜ | 4 | |
+| Hold-to-peek (stretch) | ⬜ | — | |
+| Slingshot throw (stretch) | ⬜ | — | |
+| Self-shifting objects / enemies (stretch) | ⬜ | — | |
+| Background and foreground plane themes (undecided) | ⬜ | — | |
 
 ## 6. Polish & Release
 
 | System | Status | Notes |
 |---|---|---|
 | Tutorial / onboarding | ⬜ | |
-| Accessibility (subtitles, colorblind, remapping) | ⬜ | Required by the brief's "usable" bar; scope in `spec.md` |
+| Accessibility (subtitles, colorblind, remapping) | ⬜ | Required by the brief's "usable" bar; scope in `docs/spec.md` |
 | Localization support | ➖ | |
 | Achievements | ➖ | |
 | Analytics | ➖ | |

@@ -20,7 +20,7 @@ The current plan for each phase, starting from the map in your pitch. Update it 
 
 ## Checkpoints
 
-The next few results to build, each with what it should produce and how you will test it against the acceptance checks in `spec.md`. Test each result before moving on, including related behavior that already worked, and commit meaningful working checkpoints.
+The next few results to build, each with what it should produce and how you will test it against the acceptance checks in `docs/spec.md`. Test each result before moving on, including related behavior that already worked, and commit meaningful working checkpoints.
 
 ## Testing and evidence
 
@@ -28,4 +28,4 @@ Record what you tested and what happened. For peer testing, note what people did
 
 ## Simplification reviews
 
-A project this size invites Agents to pile on code. Redirect them away from bloat, stacked patches, obsolete features, and edge cases that a simpler design or code-structure rule would prevent. At the end of Phases 3, 4, and 5, have the Agent identify these problems, then decide yourself what to change. Record what it found, what you decided and why, and the result. Update the architecture in `spec.md` if the structure changes.
+A project this size invites Agents to pile on code. Redirect them away from bloat, stacked patches, obsolete features, and edge cases that a simpler design or code-structure rule would prevent. At the end of Phases 3, 4, and 5, have the Agent identify these problems, then decide yourself what to change. Record what it found, what you decided and why, and the result. Update the architecture in `docs/spec.md` if the structure changes.
