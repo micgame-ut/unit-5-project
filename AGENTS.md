@@ -2,7 +2,7 @@
 
 - Developer: The person developing the project and directing the Agent. The Developer conducts and evaluates research, makes project decisions, approves the work, and verifies the results.
 - Agent: The AI system supporting the Developer. The Agent investigates, explains, proposes, and performs authorized work while deferring consequential decisions and approval to the Developer.
-- User: A person who uses or will use the completed project. The Developer defines the intended Users in `pitch.md`; their needs, circumstances, and experiences inform project decisions.
+- User: A person who uses or will use the completed project. The Developer defines the intended Users in `pitches/<name>/pitch.md`; their needs, circumstances, and experiences inform project decisions.
 - Studio director: Reviews the pitch for purpose, feasibility, and scope, approves it before development begins, and reviews progress at milestones.
 
 Standard field terms such as user research, user story, user experience, and user interface keep their conventional meanings.
@@ -57,7 +57,7 @@ When the Developer directs the Agent to save a transcript, save the entire text 
 
 Write code for these exact versions. If unsure whether an API exists in this version, check before using it. Update this table whenever a package changes.
 
-**Session start:** read `STATUS.md`, `plan.md` and `spec.md` before anything else.
+**Session start:** read `STATUS.md`, `docs/plan.md` and `docs/spec.md` before anything else.
 
 **Schedule:** Phase 1 Oct 26–Nov 2 (pitch) · Phase 2 Nov 2–9 · Phase 3 Nov 9–16 · Phase 4 Nov 16–30 · Phase 5 Nov 30–Dec 7. Weekly snapshots per `brief.md`.
 
@@ -83,20 +83,20 @@ Every feature is a module and follows this order:
 | 2 | Field spec | Table of fields/properties and their purpose |
 | 3 | Dependencies & events | What it references, raises, and listens to |
 | 4 | Methods | One method at a time, each with a concise explanation. Trivial methods (getters, simple callbacks, one-line wrappers) are batched into one approval |
-| 5 | Tests | Agent checks compile/console first, reviews a capture of the sandbox scene if visual (`screenshots-video` skill), then the Developer confirms behavior against `spec.md` acceptance checks |
+| 5 | Tests | Agent checks compile/console first, reviews a capture of the sandbox scene if visual (`screenshots-video` skill), then the Developer confirms behavior against `docs/spec.md` acceptance checks |
 | 6 | Optimization pass | Profiler check against budgets |
 | 7 | Doc | `Docs/<Feature>.md` |
-| 8 | Roadmap | Update `ROADMAP.md`: status, juice backlog, mechanic log |
+| 8 | Roadmap | Update `docs/ROADMAP.md`: status, juice backlog, mechanic log |
 | 9 | Merge | Summary approved → final commit → merge to `main` |
 
 ### Functional first, juice later
 - A mechanic is **done** when it is functional: complete logic, tested, optimized, documented. No juice is required.
 - During step 3, raise events at every moment juice could attach to (hit, land, dash start/end, pickup, death, etc.).
-- Note juice ideas in the mechanic's **Juice backlog** in `ROADMAP.md` instead of building them.
+- Note juice ideas in the mechanic's **Juice backlog** in `docs/ROADMAP.md` instead of building them.
 - Juice is its own module pass (`juice/<mechanic-name>` branch). It listens to the mechanic's events and never edits the mechanic's logic.
 
 ### Roadmap
-- `ROADMAP.md` is the source of truth for which game systems exist and which are still needed. `plan.md` holds the schedule and checkpoints.
+- `docs/ROADMAP.md` is the source of truth for which game systems exist and which are still needed. `docs/plan.md` holds the schedule and checkpoints.
 - When suggesting what to build next, prefer unbuilt **Core** systems, then systems that unblock the most others.
 - Build Core systems only when a mechanic needs them. ➖ rows are added on demand.
 
@@ -139,7 +139,7 @@ Assets/
 - Editor-only code lives in an `Editor/` subfolder with its own `.Editor.asmdef`.
 - Always move or rename assets together with their `.meta` files so references aren't broken.
 - Every feature gets a sandbox scene with only what it needs to test and profile.
-- Keep `spec.md` → Structure rules in sync with this section.
+- Keep `docs/spec.md` → Structure rules in sync with this section.
 
 ### Asset naming
 `<Prefix>_<Feature>_<Name>` in PascalCase, e.g. `M_Dash_Trail`, `SG_Water_Surface`.
@@ -228,8 +228,8 @@ Track only items significant enough to note:
 3. Record notable numbers in the module doc.
 
 ### Simplification review
-- At the end of Phases 3, 4 and 5 (see `plan.md`), re-check every module touched since the last review, including older scripts that were modified.
-- Output: a short list of issues found, the fix applied, and before/after numbers where measured. The Developer decides what changes; record it in `plan.md`.
+- At the end of Phases 3, 4 and 5 (see `docs/plan.md`), re-check every module touched since the last review, including older scripts that were modified.
+- Output: a short list of issues found, the fix applied, and before/after numbers where measured. The Developer decides what changes; record it in `docs/plan.md`.
 
 ## Programming doc (`Docs/<Feature>.md`)
 1. **Purpose:** 1–2 sentences
@@ -279,7 +279,7 @@ The Dec 7 snapshot also includes `breakdown/breakdown.pdf` and the completed deb
 - Contains only: current branch, current mechanic + lifecycle step, next action, open questions. Overwrite it; don't append history.
 
 ### Decisions
-- Log project and scope decisions in `research.md` → Inquiry and decisions, and structural decisions in `spec.md` → Decisions and changes (date · decision · why).
+- Log project and scope decisions in `docs/research.md` → Inquiry and decisions, and structural decisions in `docs/spec.md` → Decisions and changes (date · decision · why).
 - Check them before proposing an approach. Don't re-open a logged decision unless the Developer does.
 
 ### Unity Editor connection

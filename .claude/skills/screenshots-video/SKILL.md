@@ -20,4 +20,4 @@ description: Use when taking screenshots or video of the Unity project, either t
 - At each milestone, capture **3–5 screenshots** (plus one short clip only if the Developer asks) from representative scenes.
 - Save to `Docs/Milestones/<YYYY-MM-DD>_<MilestoneName>/` in the project root. Images are PNG or JPG, max 1920×1080.
 - Add `README.md` in that folder: milestone name, date, branch/commit, 2–4 bullets on what changed since the last milestone, one line per image.
-- Log the milestone in `ROADMAP.md`'s Mechanic Log.
+- Log the milestone in `docs/ROADMAP.md`'s Mechanic Log.

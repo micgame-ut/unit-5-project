@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rifter Branding References</title>
+<style>
+  :root { --bg:#f4efe4; --ink:#2b2a33; --muted:#6b6872; --card:#fffdf7; --line:#d9d2c0; --accent:#b4476b; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1d1c22; --ink:#ece8dc; --muted:#a29fa8; --card:#26252c; --line:#3a3841; --accent:#e07a9f; } }
+  body { margin:0; padding:24px 16px 64px; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui, sans-serif; }
+  main { max-width:760px; margin:0 auto; }
+  h1 { margin:0 0 4px; font-size:1.6rem; }
+  h2 { margin:32px 0 8px; font-size:1.15rem; border-bottom:1px solid var(--line); padding-bottom:4px; }
+  p.lead { color:var(--muted); margin:0 0 8px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:12px 14px; margin:10px 0; }
+  .card label.pick { display:flex; gap:10px; align-items:flex-start; font-weight:600; cursor:pointer; }
+  .card input[type=checkbox] { margin-top:5px; width:18px; height:18px; flex:none; }
+  .meta { color:var(--muted); font-size:.88rem; margin:4px 0 6px 28px; }
+  .note { margin-left:28px; }
+  .note { display:block; width:calc(100% - 28px); box-sizing:border-box; font:inherit; padding:6px 8px;
+          background:var(--bg); color:var(--ink); border:1px solid var(--line); border-radius:6px; }
+  a { color:var(--accent); }
+  button { font:inherit; padding:8px 14px; border-radius:6px; border:1px solid var(--accent); background:var(--accent); color:#fff; cursor:pointer; }
+  textarea#out { width:100%; box-sizing:border-box; min-height:180px; margin-top:10px; font:14px/1.4 monospace;
+                 background:var(--card); color:var(--ink); border:1px solid var(--line); border-radius:6px; padding:8px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rifter: branding references</h1>
+  <p class="lead">Direction: the game world is a <b>book</b>. Toska lives on one page, dimensions are the pages, the player flips between them, and a Rift is a <b>tear</b> through a page.
+  Check what matches your vision, add notes, then press <b>Build summary</b> and paste the result into chat.</p>
+  <p class="lead">No thumbnails: I did not fetch images I could not verify. Entries marked <i>search</i> are search links, not confirmed pages.</p>
+
+  <h2>A. Games with a book / paper / layered-image feel</h2>
+  <div class="card" data-id="gorogoa">
+    <label class="pick"><input type="checkbox"> Gorogoa</label>
+    <div class="meta"><a href="https://www.annapurna.com/interactive/gorogoa" target="_blank" rel="noopener">annapurna.com</a> · Annapurna Interactive</div>
+    <div class="meta">Puzzles built from stacked and moved hand-drawn images. Moving an image with an opening onto another turns it into a mask. Close to the Rift-as-window idea.</div>
+    <input class="note" placeholder="Notes">
+  </div>
+  <div class="card" data-id="swan">
+    <label class="pick"><input type="checkbox"> The Unfinished Swan</label>
+    <div class="meta"><a href="https://www.gamedeveloper.com/design/a-narrative-dream-the-unfinished-swan-part-i-discovery" target="_blank" rel="noopener">Game Developer article</a> · <a href="https://www.gameinformer.com/games/the_unfinished_swan/b/ps3/archive/2012/05/02/unfinished-swan-preview.aspx" target="_blank" rel="noopener">Game Informer preview</a></div>
+    <div class="meta">Storybook tone: black line art on warm off-white (not pure white, so it reads as paper), with story pages hidden on walls.</div>
+    <input class="note" placeholder="Notes">
+  </div>
+  <div class="card" data-id="tearaway">
+    <label class="pick"><input type="checkbox"> Tearaway</label>
+    <div class="meta"><a href="https://www.google.com/search?q=Tearaway+game+papercraft+art+style" target="_blank" rel="noopener">search</a> · Media Molecule</div>
+    <div class="meta">A world made of paper: folded, torn and cut-out surfaces. Shows tearing as a core visual and interaction.</div>
+    <input class="note" placeholder="Notes">
+  </div>
+  <div class="card" data-id="papermario">
+    <label class="pick"><input type="checkbox"> Paper Mario series</label>
+    <div class="meta"><a href="https://madegooddesigns.com/paper-mario-font/" target="_blank" rel="noopener">logo/font breakdown</a> · Nintendo / Intelligent Systems</div>
+    <div class="meta">Layered paper cut-out look, including the wordmark: thick lettering with edge and shadow effects that read as cut paper.</div>
+    <input class="note" placeholder="Notes">
+  </div>
+  <div class="card" data-id="fez">
+    <label class="pick"><input type="checkbox"> Fez</label>
+    <div class="meta"><a href="https://www.google.com/search?q=Fez+game+perspective+rotation+2D+3D" target="_blank" rel="noopener">search</a> · Polytron</div>
+    <div class="meta">2D platforming with perspective shifts. Already in your design doc as a reference for changing views of the same space.</div>
+    <input class="note" placeholder="Notes">
+  </div>
+
+  <h2>B. Logo and title treatments</h2>
+  <div class="card" data-id="tornguide">
+    <label class="pick"><input type="checkbox"> Torn-paper texture guide</label>
+    <div class="meta"><a href="https://carat.im/en/prompt-gallery/torn-paper-texture" target="_blank" rel="noopener">carat.im</a></div>
+    <div class="meta">Practical notes on fiber detail, sheet thickness, overlap and light direction for convincing torn edges. A guide, not authoritative.</div>
+    <input class="note" placeholder="Notes">
+  </div>
+  <div class="card" data-id="cutfont">
+    <label class="pick"><input type="checkbox"> Cut-paper display fonts (license check needed)</label>
+    <div class="meta"><a href="https://ikiiko.gumroad.com/l/papyrcuts-poster-art-font" target="_blank" rel="noopener">Papyrcuts (paid)</a></div>
+    <div class="meta">Example of a papercut-style display font. Any font used needs its license checked and credited in research.md.</div>
+    <input class="note" placeholder="Notes">
+  </div>
+  <div class="card" data-id="selfmade">
+    <label class="pick"><input type="checkbox"> Draw the logo myself (torn R through a page)</label>
+    <div class="meta">Own sketch; avoids license questions and fits Sketchbook Pro test.</div>
+    <input class="note" placeholder="Notes">
+  </div>
+
+  <h2>C. Technical references for page flip and tear</h2>
+  <div class="card" data-id="curl">
+    <label class="pick"><input type="checkbox"> Cylinder page-curl shader maths</label>
+    <div class="meta"><a href="https://alvarotrigo.com/fullPage/page-flip-effect/" target="_blank" rel="noopener">Page Flip Effect write-up</a></div>
+    <div class="meta">Single-pass shader with a cylinder curl. In GLSL, so it would need translating to Shader Graph or custom HLSL.</div>
+    <input class="note" placeholder="Notes">
+  </div>
+  <div class="card" data-id="unitycurl">
+    <label class="pick"><input type="checkbox"> UnityBookPageCurl (open source)</label>
+    <div class="meta"><a href="https://gittrend.io/repo/Dandarawy/UnityBookPageCurl" target="_blank" rel="noopener">gittrend.io listing</a></div>
+    <div class="meta">UGUI page curl in C#. Last pushed about 5 years ago; license not verified. Reference only until checked.</div>
+    <input class="note" placeholder="Notes">
+  </div>
+  <div class="card" data-id="tearshader">
+    <label class="pick"><input type="checkbox"> Torn-edge via noise alpha cutout (Shader Graph)</label>
+    <div class="meta"><a href="https://www.google.com/search?q=Unity+Shader+Graph+torn+paper+edge+noise+alpha+clip" target="_blank" rel="noopener">search</a></div>
+    <div class="meta">Likely approach for the Rift tear: noise-driven alpha cutout with an edge highlight. No specific tutorial verified yet.</div>
+    <input class="note" placeholder="Notes">
+  </div>
+
+  <h2>Your picks</h2>
+  <button id="build">Build summary</button>
+  <textarea id="out" readonly placeholder="Press Build summary, then copy this into chat."></textarea>
+</main>
+<script>
+  var cards = document.querySelectorAll('.card[data-id]');
+  function key(c, k) { return 'rifter-refs:' + c.dataset.id + ':' + k; }
+  function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function save(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  cards.forEach(function (c) {
+    var cb = c.querySelector('input[type=checkbox]'), note = c.querySelector('.note');
+    cb.checked = load(key(c, 'on')) === '1';
+    note.value = load(key(c, 'note')) || '';
+    cb.addEventListener('change', function () { save(key(c, 'on'), cb.checked ? '1' : '0'); });
+    note.addEventListener('input', function () { save(key(c, 'note'), note.value); });
+  });
+  document.getElementById('build').addEventListener('click', function () {
+    var lines = [];
+    cards.forEach(function (c) {
+      var on = c.querySelector('input[type=checkbox]').checked, note = c.querySelector('.note').value.trim();
+      var name = c.querySelector('.pick').textContent.trim();
+      if (on || note) lines.push((on ? '[x] ' : '[ ] ') + name + (note ? ' - ' + note : ''));
+    });
+    document.getElementById('out').value = lines.length ? lines.join('\n') : '(nothing checked)';
+  });
+</script>
+</body>
+</html>
