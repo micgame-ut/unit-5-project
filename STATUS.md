@@ -1,6 +1,6 @@
 # STATUS.md
 
-**Project:** Project 5, solo. Chosen idea: Plane Shift (working title; 2D puzzle-platformer, Unity), replacing Rifter on 2026-10-31. Pitch drafted in `pitches/plane-shift/pitch.md`; not yet reviewed by the Developer or approved. Alternate pitch for the Studio director: Elemanental (`pitches/elemanental/pitch.md`, Notion "Elemanental").
+**Project:** Project 5, solo. Chosen idea: Plane Shift (working title; 2D puzzle-platformer, Unity), replacing Rifter on 2026-10-31. Pitch drafted in `pitches/plane-shift/pitch.md`; not yet reviewed by the Developer or approved. Second main pitch for the Studio director: Elemanental (`pitches/elemanental/pitch.md`, Notion "Elemanental"), still being completed.
 **Branch:** `docs/pitches-reorg` (files reorganized into `docs/` and `pitches/`; not yet committed)
 **Phase:** 1 — Ideate and pitch (Oct 26–Nov 2)
 **Lifecycle step:** Pre-development setup

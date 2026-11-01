@@ -1,14 +1,14 @@
-# Pitch: Elemanental (alternate)
+# Pitch: Elemanental (second main pitch)
 
 > EDITING DIRECTIVE: DEVELOPER AND AGENT EDIT THIS FILE COLLABORATIVELY. THE DEVELOPER MUST REVIEW AND APPROVE ITS CONTENT. AFTER THE STUDIO DIRECTOR APPROVES A PITCH, DO NOT EDIT IT.
 
-Purpose: An alternate pitch for the Studio director, presented alongside Plane Shift (`pitches/plane-shift/pitch.md`). Design source: Notion → Game Ideas → Elemanental. Ideas considered and the comparison with other ideas live in the Plane Shift pitch.
+Purpose: A second main pitch for the Studio director, presented alongside Plane Shift (`pitches/plane-shift/pitch.md`). Design source: Notion → Game Ideas → Elemanental. Ideas considered and the comparison with other ideas live in the Plane Shift pitch.
 
 ## Ideation
 
 ### Role of this pitch
 
-Alternate project. If the Studio director prefers it, or Plane Shift is not approved, this becomes the Project 5 build. *(Developer to confirm wording.)*
+Second main pitch, on equal footing with Plane Shift. The Studio director can approve either one as the Project 5 build.
 
 ### Branding
 
@@ -34,7 +34,7 @@ Working title: **Elemanental**. Logo: not yet drawn. Branding: 3D top-down dueli
 
 ### Why this project
 
-*Developer to write in own words.* Points from the design doc: a competitive game with a low skill floor and high skill ceiling, built on a matchup system that is already worked out and already playable as a browser prototype.
+I enjoy competitive, skill-based design, and Elemanental is that kind of game: reads, parry timing and stamina decide every exchange. The matchup system is already worked out on paper, and a playable Fire vs. Water browser prototype proves the core, so the risk is lower. Local 1v1 matches are small and short, which makes them easy to build, test and repeat with a friend.
 
 ### Users
 
@@ -42,13 +42,14 @@ Players who enjoy PvP, competitive, fighting and arcade games, playing local 1v1
 
 ### Experience goals
 
-*Draft.* Users should notice that no action is safe against everything and that each element plays differently. They should feel the tension of reading an opponent and the payoff of a clean parry, detonation or ring out. They should be able to shoot and dash in their first match, then improve through parry timing, stamina and matchup knowledge.
+Users should notice that no action is safe against everything and that each element plays differently. They should feel the tension of reading an opponent and the payoff of a clean parry, detonation or ring out. They should be able to shoot and dash in their first match, then improve through parry timing, stamina and matchup knowledge.
 
 ### Technical goals
 
 - **Matchup system:** six actions with a full win/lose chart between them, plus a stamina budget that gates defense and movement (a player runs out 1–2 times per round).
 - **Health and knockback:** four-segment health; knockback grows as health drops; ring outs with a stamina-gated dash-back window.
 - **Four element kits:** per-element projectile, shield, parry and dash values, plus unique mechanics (Earth rock walls and Absorb, Fire Burn and Detonate, Water redirect force and slick ground, Air Mimic).
+- **Element shaders:** a shader material per element on the duelist spheres (for example molten swirl for Fire, flowing surface for Water), built as each kit lands. They carry the distinct feel of each character.
 - **Rounds and matches:** round timer, sudden death, best-of-five, between-round choice (switch element or pick the map).
 - **Local play:** two players on one PC with gamepads or keyboard.
 - **Challenge I'm taking on:** keep four asymmetric kits balanced and readable on screen, with all numbers in ScriptableObjects so tuning stays fast.
@@ -59,28 +60,26 @@ From scratch: a new Unity project. A browser prototype of Fire vs. Water already
 
 ### Tech stack
 
-Unity with URP (3D visuals, gameplay on a flat plane), C#, Unity Input System (two local players), Shader Graph (element sphere materials, later), ScriptableObjects for balance data, Git/GitHub, Windows build for public delivery (itch.io is the doc's first target). New to me: *(Developer to list).* The doc's backup is Unity 2D with pixel art if shaders take too long.
+Unity with URP (3D visuals, gameplay on a flat plane), C#, Unity Input System (two local players), Shader Graph (element sphere materials), ScriptableObjects for balance data, Git/GitHub, Windows build for public delivery (itch.io is the doc's first target). None of these are new to me. The fallback is Unity 2D with pixel art if shaders take too long.
 
 ### MVP or critical function
 
-*Draft, from the doc's vertical slice.* Local 1v1, Fire vs. Water, one arena, simple shapes: all six actions and the matchup chart, stamina and the winded state, segmented health, knockback scaling, ring out, time out, best of five. It works when two people can play a full best-of-five match, the over-parry on light shots and the Burn bait-and-detonate loop behave as designed, and it runs at 60 FPS.
+Local 1v1, Fire vs. Water, one arena, simple shapes: all six actions and the matchup chart, stamina and the winded state, segmented health, knockback scaling, ring out, time out, best of five. It works when two people can play a full best-of-five match, the over-parry on light shots and the Burn bait-and-detonate loop behave as designed, and it runs at 60 FPS.
 
 ### Five-week map
 
-*Draft.* Scope is all four elements, built in the doc's order.
+Scope is all four elements, built in the doc's order. Each kit ships with its element shader.
 1. **Oct 26–Nov 2:** Pitch.
-2. **Nov 2–9:** Unity setup; input; the six actions, matchup chart, stamina, health and knockback with Fire vs. Water in one arena (MVP).
-3. **Nov 9–16:** Round and match flow, win conditions, Earth kit.
-4. **Nov 16–30:** Air kit (Mimic), remaining arenas, between-round choice, menus, audio; peer-review build.
+2. **Nov 2–9:** Unity setup; input; the six actions, matchup chart, stamina, health and knockback with Fire vs. Water in one arena, simple shapes (MVP).
+3. **Nov 9–16:** Round and match flow, win conditions, Earth kit; Fire, Water and Earth shaders.
+4. **Nov 16–30:** Air kit (Mimic) and its shader, remaining arenas, between-round choice, menus, audio; peer-review build.
 5. **Nov 30–Dec 7:** Balance pass, peer-review fixes, juice, final Windows build, breakdown and debrief.
 
 ### Stretch goals
 
-*Developer to reorder.*
-1. Element shaders on the spheres.
-2. Remaining arenas with hazards (Earth, Fire, Water, Air).
-3. 2v2 mode.
-4. Genji-Ball variant (one shared projectile that speeds up on every parry).
+1. Remaining arenas with hazards (Earth, Fire, Water, Air).
+2. 2v2 mode.
+3. Genji-Ball variant (one shared projectile that speeds up on every parry).
 
 Out of scope for this project: online play and Faction Wars, console releases.
 
@@ -90,5 +89,5 @@ Out of scope for this project: online play and Faction Wars, console releases.
 - **Scope:** all four elements in five weeks is the highest-risk option. *Find out:* decide at the end of Phase 3 whether Air is cut; Earth next if needed.
 - **Mimic (Air):** copies every element's effects, so it has the most interactions to test. *Find out:* build Air last.
 - **Visual clutter:** walls, trails, slick ground and Burn at once. *Find out:* apply the doc's readability rules and the one-wall cap; check in the MVP.
-- **Shader time:** *Find out:* start with simple shapes; fall back to pixel art.
+- **Shader time:** *Find out:* the MVP uses simple shapes and the first shader (Fire) lands early in Phase 3; if shaders block the build, fall back to 2D pixel art as a last resort.
 - **Open design numbers:** stamina costs, dash-back window, round-one element pick. *Find out:* set during playtesting.

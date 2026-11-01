@@ -7,6 +7,7 @@ description: Use when the Developer wants a pitch (or milestone/showcase) turned
 
 Builds a short deck from an approved pitch. The deck is a view of the pitch, never a second source of truth: if the two disagree, `pitches/<name>/pitch.md` wins.
 
+0. **Precondition: the pitch is complete.** Every section of `pitches/<name>/pitch.md` is filled in and approved by the Developer: no "Draft" markers, no "Developer to write" or "(confirm)" placeholders, no open choices. If any remain, stop, finish the pitch with the Developer section by section, and only then build the deck. Never ask the Developer to approve a deck, or a pitch, that still has gaps.
 1. **Gather sources.** Read `pitches/<name>/pitch.md` (final text), `docs/research.md` (decisions), and any visual material the Developer names: vertical-slice mockup, Notion doc, sketches. Read mockup artifacts with the Artifact `read` action (list files first, then read each file).
 2. **Audience line.** Start the hand-off message with one line naming the audience (normally the Studio director), per AGENTS.md.
 3. **Outline, one idea per slide.** Default order, trimmed to what the pitch actually says:
