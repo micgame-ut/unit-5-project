@@ -1,0 +1,162 @@
+﻿commit 9d018b57e948c51361c2b6348e2cdb6bd2ab4fc5
+Date:   2026-11-02 10:11:15 -0600
+Author: micgame12
+
+docs: save session transcript for weekly snapshot prep
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
+commit 0b5c0c47cb3a8cac8bd287c146dbf290782d9802
+Date:   2026-10-31 20:28:22 -0500
+Author: micgame12
+
+docs: save session transcript for pitches, ideation and decks
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
+commit ef869ae8f0463bf07b191c33de5018fd79c8cbde
+Date:   2026-10-31 20:26:12 -0500
+Author: micgame12
+
+Merge docs/status-and-cleanup: remove slice HTML export, refresh STATUS
+
+----
+commit 29f1b42bf68db5a1ab16bb9a39eb29ffbe5d3a72
+Date:   2026-10-31 20:24:22 -0500
+Author: micgame12
+
+docs: remove slice HTML export, refresh STATUS
+
+Remove the large PlaneShift_VerticalSlice.html export (the slice PNGs are kept)
+and update STATUS.md: both pitches complete, branch name, next action.
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
+commit b7340f6f69b7ab5690902d44dd6ad2a355d420f7
+Date:   2026-10-31 20:22:28 -0500
+Author: micgame12
+
+Merge docs/pitches-reorg: reorganize into docs/ and pitches/, complete both pitches
+
+----
+commit ccee8357e1498585b1b21527231f5269aabe1bfa
+Date:   2026-10-31 20:22:19 -0500
+Author: micgame12
+
+docs: reorganize into docs/ and pitches/, complete both pitches
+
+Reorganized the project into docs/ (plan, spec, research, ROADMAP) and
+pitches/ (one subfolder per pitch, each with its own references), and updated
+every path in AGENTS.md, STATUS.md, the docs and the skills. Completed the
+Plane Shift pitch (glassy, futuristic, minimalist art direction; midground and
+background MVP) and removed the cyan accent from the pitch, roadmap and
+research log. Added the completed Elemanental pitch as a second main pitch
+(all four elements, 3D URP, shaders as core work, Fire vs. Water MVP) with a
+saved copy of its browser prototype. Added the pitch-deck skill, which
+requires a complete, approved pitch before any deck is built, and refreshed
+STATUS.md for both pitches. No code or performance numbers; the two decks live
+as private artifacts outside the repo.
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
+commit 231fe10209a66fdb5e4ba573af6b16c84d7b0421
+Date:   2026-10-31 20:19:01 -0500
+Author: micgame12
+
+docs: complete Elemanental pitch and require a finished pitch before decks
+
+Finish the Elemanental pitch (role, why, tech, scope, shaders as core work,
+stretch goals), update STATUS, and add a precondition to the pitch-deck skill:
+no deck until the pitch is complete and approved.
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
+commit 42b557b7a1f49ab4908f9cae38d16b9953d454cb
+Date:   2026-10-31 19:57:05 -0500
+Author: micgame12
+
+docs: group pitches and course docs; add Elemanental alternate pitch
+
+Move plan, spec, research and ROADMAP into docs/, and the Plane Shift pitch
+with its references into pitches/plane-shift/. Add pitches/elemanental/ with
+a draft pitch and a saved copy of the Fire vs. Water browser prototype. Update
+every path in AGENTS.md, STATUS.md, docs and skills. Add the pitch-deck skill,
+remove the cyan accent from the Plane Shift pitch and docs, and refresh STATUS.
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
+commit be873dcbfc3b219c6687c25bf958179797d36b52
+Date:   2026-10-27 00:08:37 -0500
+Author: micgame12
+
+Merge docs/session-transcript: save session transcript, set ideation as next step
+
+Saved the repo-setup and docs-merge transcript to transcripts/ and updated STATUS.md so the next action is ideation first in a fresh chat.
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
+commit 417d17f8cd458caabf6604a6c3295814ee021f8d
+Date:   2026-10-27 00:08:37 -0500
+Author: micgame12
+
+docs: set STATUS branch to main
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
+commit 7f5dcf10cd2d973bc15c1634b1555d4dd6a1c073
+Date:   2026-10-27 00:01:37 -0500
+Author: micgame12
+
+docs: save session transcript and update STATUS for ideation
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
+commit 096805bbc7c55261e18714a03eeddfeb513a50a2
+Date:   2026-10-26 22:27:42 -0500
+Author: micgame12
+
+Merge docs/import-session-files: Unity rules, roadmap, status and skills
+
+Merged Unity rules into AGENTS.md below the template line, moved reference, shader, VFX and capture workflows into .claude/skills, added a trimmed ROADMAP.md and a STATUS.md on the brief's five phases, folded DECISIONS.md into research.md and spec.md, and removed the Git LFS rules.
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
+commit 3d77551b2c3771cf26cad05070c380d0425d7b28
+Date:   2026-10-26 22:07:43 -0500
+Author: micgame12
+
+docs: rename captures skill so .gitignore does not hide it
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
+commit 3e3b19f1c9040df9e86009f83a60dbebaace771c
+Date:   2026-10-26 22:07:33 -0500
+Author: micgame12
+
+docs: merge Unity rules into AGENTS.md; add ROADMAP, STATUS and skills
+
+Fold DECISIONS.md into research.md and spec.md, move reference, shader, VFX and capture workflows into .claude/skills, and drop Git LFS rules.
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
+commit 14cdd333bbe11723e502427878f7e59d25245f91
+Date:   2026-10-26 21:21:30 -0500
+Author: micgame12
+
+chore: initial commit with project docs, .gitignore and LFS rules
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
