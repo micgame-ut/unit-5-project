@@ -1,4 +1,31 @@
-﻿commit 9d018b57e948c51361c2b6348e2cdb6bd2ab4fc5
+﻿commit b832596f5f16242cbf380bef0357069553d930e7
+Date:   2026-11-02 10:16:21 -0600
+Author: micgame12
+
+docs: add pitch deck PDFs for Plane Shift and Elemanental
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
+commit da763dff63ee535b72680d35c3c8698c19a30a0b
+Date:   2026-11-02 10:12:40 -0600
+Author: micgame12
+
+Merge docs/session-transcript-pitches: transcripts and commit log for weekly snapshot
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
+commit c2d109eba94d7691f4759bdf71782aca2a06600f
+Date:   2026-11-02 10:11:19 -0600
+Author: micgame12
+
+docs: add commit-log.txt for weekly snapshot
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+----
+commit 9d018b57e948c51361c2b6348e2cdb6bd2ab4fc5
 Date:   2026-11-02 10:11:15 -0600
 Author: micgame12
 
